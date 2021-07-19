@@ -13,21 +13,13 @@ app.listen(port, () => {
     console.log('The application is listening on port 3000!');
 })
 */
-import { Event } from '../models/Event';
-import { IEvent } from '../models/IEvent';
-import SERVICE_IDENTIFIER from '../models/Identifiers';
-import container from "../models/Installer";
+//import { Event } from '../models/Event'
+import * as dotenv from 'dotenv'
 
-console.log("Application loads ...")
-
-
+console.log('Application loads ...')
 /*
 const event:Event = new Event();
 console.log(event.getEvent());
 */
-
-let event = container.get<IEvent>(SERVICE_IDENTIFIER.IEvent);
-console.log(event.getEvent());
-
-//const instance = container.resolve(Event);
-//console.log(instance.getEvent());
+dotenv.config({ path: '.env' })
+console.log(process.env.test)
