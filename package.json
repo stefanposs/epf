@@ -17,6 +17,7 @@
     "dev:doc": "typedoc --out docs lib/bin/app.ts",
     "dev:lint": "eslint lib --ext js,ts",
     "dev:start": "nodemon --watch \"lib/**\" --ext \"ts,json\" --ignore \"test/**/*.spec.ts\" --exec \"ts-node lib/bin/app.ts\"",
+    "prd:build": "tsc",
     "prd:start": "tsc && node dist/bin/app.js"
   },
   "dependencies": {
