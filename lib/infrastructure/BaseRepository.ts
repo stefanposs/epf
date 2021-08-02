@@ -1,26 +1,27 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // import all interfaces
 import { IWrite } from '../infrastructure/IWrite'
 import { IRead } from '../infrastructure/IRead'
 
 // that class only can be extended
 export abstract class BaseRepository<T> implements IWrite<T>, IRead<T> {
-  create (item: T): Promise<boolean> {
+  create (_item: T): Promise<boolean> {
     throw new Error('Method not implemented.')
   }
 
-  put (id: string, item: T): Promise<boolean> {
+  put (_id: string, _item: T): Promise<boolean> {
     throw new Error('Method not implemented.')
   }
 
-  delete (id: string): Promise<boolean> {
+  delete (_id: string): Promise<boolean> {
     throw new Error('Method not implemented.')
   }
 
-  find (item: T): Promise<T[]> {
+  find (_item: T): Promise<T[]> {
     throw new Error('Method not implemented.')
   }
 
-  findOne (id: string): Promise<T> {
+  findOne (_id: string): Promise<T> {
     throw new Error('Method not implemented.')
   }
 }

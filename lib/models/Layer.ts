@@ -11,21 +11,18 @@ class Layer {
   }
 
   /**
-   * getter methods
+   * getter/setter methods
    */
   public get name ():string {
     return this._name
   }
 
-  public get entryTimestampUtc ():Date {
-    return this._entryTimestampUtc
-  }
-
-  /**
-   * setter methods
-   */
   public set name (name:string) {
     this._name = name
+  }
+
+  public get entryTimestampUtc ():Date {
+    return this._entryTimestampUtc
   }
 
   public set entryTimestampUtc (entryTimestampUtc:Date) {

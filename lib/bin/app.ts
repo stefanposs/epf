@@ -13,10 +13,12 @@ app.listen(port, () => {
     console.log('The application is listening on port 3000!');
 })
 */
-//import { Event } from '../models/Event'
+import { Event } from '../models/Event'
 import * as dotenv from 'dotenv'
 
-console.log('Application loads ...')
+const Test = new Event()
+Test.uuid = 'kjdkasjdaksd'
+console.log('Application loads ...' + Test.uuid)
 /*
 const event:Event = new Event();
 console.log(event.getEvent());

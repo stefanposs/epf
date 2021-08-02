@@ -1,4 +1,4 @@
 {
-    "entryPoints": ["src/app.ts"],
+    "entryPoints": ["lib/edf.ts"],
     "out": "docs"
 }

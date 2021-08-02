@@ -12,44 +12,55 @@ class Meta {
     command?:Command,
     layer?:Layer[]
   ) {
-    this._source = source
-    this._command = command
-    this._layer = layer
+    // source
+    if (source == (undefined || null)) {
+      this._source = new Source()
+    }else{
+      this._source = source
+    }
+    // command
+    if (command == (undefined || null)) {
+      this._command = Command.write
+    }else{
+      this._command = command
+    }
+    // layer
+    if (layer == (undefined || null)) {
+      this._layer = []
+    }else{
+      this._layer = layer
+    }
   }
 
   /*
-  * getter methods
+  * getter/setter methods
   */
 
   public get source ():Source {
     return this._source
   }
 
-  public get command ():Command {
-    return this._command
-  }
-
-  public get layer ():Layer[] {
-    return this._layer
-  }
-
-  /*
-  * setter methods
-  */
-
   public set source (source:Source) {
     this._source = source
+  }
+
+  public get command ():Command {
+    return this._command
   }
 
   public set command (command:Command) {
     this._command = command
   }
 
+  public get layer ():Layer[] {
+    return this._layer
+  }
+
   public set layer (layer:Layer[]) {
     this._layer = layer
   }
 
-  public pushElementToDataLayer (item:Layer) {
+  public pushElementToDataLayer (item:Layer): void {
     this._layer.push(item)
   }
 }

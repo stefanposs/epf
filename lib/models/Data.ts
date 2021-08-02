@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 class Data {
   constructor () {
-    throw new Error('Constructor not implemented.')
+    
   }
 }
 export { Data }

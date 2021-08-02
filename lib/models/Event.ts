@@ -24,17 +24,48 @@ class Event {
     meta?:Meta,
     data?:Data
   ) {
-    if (uuid) {
+    // uuid
+    if (uuid == (undefined || null)) {
       this._uuid = uuidV4()
+    }else{
+      this._uuid = uuid
     }
-    this._type = type
-    this._version = version
-    this._meta = meta
-    this._data = data
+
+    // type
+    if (type == (undefined || null)) {
+      this._type = ""
+    }else{
+      this._type = type
+    }
+
+    // version
+    if (version == (undefined || null)) {
+      this._version = ""
+    }else{
+      this._version = version
+    }
+
+    // meta
+    if (meta == (undefined || null)) {
+      this._meta = new Meta()
+    }else{
+      this._meta = meta
+    }
+
+    // data
+    if (data == (undefined || null)) {
+      this._data = new Data()
+    }else{
+      this._data = data
+    }
   }
 
   public get uuid ():string {
     return this._uuid
+  }
+
+  public set uuid (uuid:string) {
+    this._uuid = uuid
   }
 
   public get type ():string {
