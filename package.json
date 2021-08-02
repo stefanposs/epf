@@ -13,11 +13,11 @@
   ],
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --watch \"lib/**\" --ext \"ts,json\" --ignore \"test/**/*.spec.ts\" --exec \"ts-node lib/bin/app.ts\"",
-    "build": "tsc && node dist/bin/app.js",
-    "test": "jest",
-    "doc": "typedoc --out docs lib/bin/app.ts",
-    "lint": "eslint lib --ext js,ts"
+    "dev:test": "jest",
+    "dev:doc": "typedoc --out docs lib/bin/app.ts",
+    "dev:lint": "eslint lib --ext js,ts",
+    "dev:start": "nodemon --watch \"lib/**\" --ext \"ts,json\" --ignore \"test/**/*.spec.ts\" --exec \"ts-node lib/bin/app.ts\"",
+    "prd:start": "tsc && node dist/bin/app.js"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
