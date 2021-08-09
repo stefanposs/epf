@@ -1,7 +1,6 @@
 interface IWrite<T> {
-    create(item: T): Promise<boolean>;
-    put(id: string, item: T): Promise<boolean>;
-    delete(id: string): Promise<boolean>;
+    write(item: T): Promise<boolean>;
+    delete(item: T): Promise<boolean>;
 }
 
 export { IWrite }

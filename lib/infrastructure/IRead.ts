@@ -1,6 +1,5 @@
 interface IRead<T> {
-    find(item: T): Promise<T[]>;
-    findOne(id: string): Promise<T>;
+    get(item: T): Promise<T[]>;
 }
 
 export { IRead }
