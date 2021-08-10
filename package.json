@@ -1,5 +1,5 @@
 {
-    "name": "@atstaeff/epf",
+    "name": "epf",
     "version": "1.0.1",
     "description": "Application for event processing in Azure",
     "main": "dist/app.js",
@@ -14,7 +14,7 @@
     "license": "MIT",
     "scripts": {
         "dev:test": "jest",
-        "dev:doc": "typedoc --out docs lib/bin/app.ts",
+        "dev:doc": "typedoc --out docs lib/edf.ts",
         "dev:lint": "eslint lib --ext js,ts",
         "dev:start": "nodemon --watch \"lib/**\" --ext \"ts,json\" --ignore \"test/**/*.spec.ts\" --exec \"ts-node lib/bin/app.ts\"",
         "prd:build": "tsc",

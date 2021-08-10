@@ -1,11 +1,17 @@
+/**
+ * This class represents the event.
+ */
 class EventProcessing {
   /*
    input
    throughput
    output
    */
-  constructor () {
-    throw new Error('Constructor not implemented.')
+  /**
+   * This class represents the event.
+   */
+  constructor() {
+    throw new Error('Constructor not implemented.');
     // create the differen eventprocessing layers like repository
   }
   /*
@@ -14,4 +20,4 @@ class EventProcessing {
    output // store
    */
 }
-export { EventProcessing }
+export {EventProcessing};
