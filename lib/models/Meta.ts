@@ -1,24 +1,20 @@
 import {Source} from '../models/Source';
 import {Layer} from '../models/Layer';
-import {Command} from '../models/enum/Command';
 
 /**
  * Adds two numbers together.
  */
 class Meta {
   private _source:Source
-  private _command:Command
   private _layer:Layer[]
 
   /**
    * Adds two numbers together.
    * @param {Source} source
-   * @param {Command} command
    * @param {Layer} layer
    */
   constructor(
       source?:Source,
-      command?:Command,
       layer?:Layer[],
   ) {
     // source
@@ -26,12 +22,6 @@ class Meta {
       this._source = new Source();
     } else {
       this._source = source;
-    }
-    // command
-    if (command == (undefined || null)) {
-      this._command = Command.write;
-    } else {
-      this._command = command;
     }
     // layer
     if (layer == (undefined || null)) {
@@ -53,20 +43,6 @@ class Meta {
    */
   public set source(source:Source) {
     this._source = source;
-  }
-  /**
-   * Adds two numbers together.
-   * @return {Command}
-   */
-  public get command(): Command {
-    return this._command;
-  }
-  /**
-   * Adds two numbers together.
-   * @param {Command} command
-   */
-  public set command(command:Command) {
-    this._command = command;
   }
   /**
    * Adds two numbers together.

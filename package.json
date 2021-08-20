@@ -21,7 +21,10 @@
         "prd:start": "tsc && node dist/bin/app.js"
     },
     "dependencies": {
+        "@azure/storage-blob": "^12.7.0",
+        "ajv": "^8.6.2",
         "dotenv": "^10.0.0",
+        "dotenv-json": "^1.0.0",
         "reflect-metadata": "^0.1.13",
         "ts-node": "^10.1.0",
         "tslog": "^3.2.0",

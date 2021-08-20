@@ -10,11 +10,21 @@ class Layer {
    * @param {Date} entryTimestampUtc The second number.
    */
   constructor(
-      name:string,
-      entryTimestampUtc:Date,
+      name?:string,
+      entryTimestampUtc?:Date,
   ) {
-    this._name = name;
-    this._entryTimestampUtc = entryTimestampUtc;
+    // name
+    if (name == (undefined || null)) {
+      this._name = '';
+    } else {
+      this._name = name;
+    }
+    // entryTimestampUtc
+    if (entryTimestampUtc == (undefined || null)) {
+      this._entryTimestampUtc = new Date();
+    } else {
+      this._entryTimestampUtc = entryTimestampUtc;
+    }
   }
   /**
    * Adds two numbers together.

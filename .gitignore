@@ -10,6 +10,7 @@ node_modules
 docs
 ### .env ###
 .env
+.env*
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db

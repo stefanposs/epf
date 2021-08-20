@@ -1,0 +1,32 @@
+{
+  "uuid": "ss",
+  "type":"Customer",
+  "version":"1.0",
+  "command":"post",
+  "meta":{
+    "source":{
+      "uuid":"bc3cfb60-3556-4d27-86d7-9defcbadc133",
+      "name":"CRM System",
+      "dateOfBirthUtc":"2021-08-11T10:00:00Z",
+      "version":"1.0"
+    },
+    "layers":[
+      {
+        "name":"",
+        "entryTimestampUtc":""
+      }
+    ]
+  },
+  "data":[
+    {
+      "id":"0001",
+      "lastname":"Mustermann",
+      "firstname":"Max"
+    },
+    {
+      "id":"0002",
+      "lastname":"Müller",
+      "firstname":"Nina"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "$id": "https://stefanposs.de/edf/schemas/event.meta.source",
+  "title": "Schema that references another schema multiple times",
+  "type": "object",
+  "properties": {
+    "_uuid": {
+      "type": "string"
+    },
+    "_name": {
+      "type": "string"
+    },
+    "_dateOfBirthUtc": {
+      "type": "string"
+    },
+    "_version": {
+      "type": "string"
+    }
+  }
+}

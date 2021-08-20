@@ -1,0 +1,13 @@
+{
+  "$id": "https://stefanposs.de/edf/schemas/event.meta",
+  "title": "Schema that references another schema multiple times",
+  "type": "object",
+  "properties": {
+    "_source": {
+      "$ref": "event.meta.source"
+    },
+    "_layers": {
+      "type": "array"
+    }
+  }
+}

@@ -26,7 +26,7 @@ class Source {
       }
       // name
       if (name == (undefined || null)) {
-        this._name = '1/1/2020, 00:00:00 AM';
+        this._name = '';
       } else {
         this._name = name;
       }

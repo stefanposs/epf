@@ -3,11 +3,11 @@ import {Logger} from 'tslog';
  * Adds two numbers together.
  */
 class Logging {
-  private static _log:Logger
+  private _log:Logger
   /**
    * Adds two numbers together.
    */
-  static initialize():void {
+  constructor() {
     this._log = new Logger();
   }
 
@@ -15,7 +15,7 @@ class Logging {
    * Adds two numbers together.
    * @param {string} msg
    */
-  public static silly(msg:string):void {
+  public silly(msg:string):void {
     this._log.silly(msg);
   }
 
@@ -23,7 +23,7 @@ class Logging {
    * Adds two numbers together.
    * @param {string} msg
    */
-  public static trace(msg:string):void {
+  public trace(msg:string):void {
     this._log.trace(msg);
   }
 
@@ -31,7 +31,7 @@ class Logging {
    * Adds two numbers together.
    * @param {string} msg
    */
-  public static debug(msg:string):void {
+  public debug(msg:string):void {
     this._log.debug(msg);
   }
 
@@ -39,7 +39,7 @@ class Logging {
    * Adds two numbers together.
    * @param {string} msg
    */
-  public static info(msg:string):void {
+  public info(msg:string):void {
     this._log.info(msg);
   }
 
@@ -47,7 +47,7 @@ class Logging {
    * Adds two numbers together.
    * @param {string} msg
    */
-  public static warn(msg:string):void {
+  public warn(msg:string):void {
     this._log.warn(msg);
   }
 
@@ -55,7 +55,7 @@ class Logging {
    * Adds two numbers together.
    * @param {string} msg
    */
-  public static error(msg:string):void {
+  public error(msg:string):void {
     this._log.error(msg);
   }
 
@@ -63,7 +63,7 @@ class Logging {
    * Adds two numbers together.
    * @param {string} msg
    */
-  public static fatal(msg:string):void {
+  public fatal(msg:string):void {
     this._log.fatal(msg);
   }
 }

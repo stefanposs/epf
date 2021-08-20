@@ -1,0 +1,8 @@
+{
+  "$id": "https://stefanposs.de/edf/schemas/event.data",
+  "title": "Schema that references another schema multiple times",
+  "type": "array",
+  "items": {
+    "type": "object"
+  }
+}
